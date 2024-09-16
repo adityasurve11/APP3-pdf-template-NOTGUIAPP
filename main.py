@@ -8,7 +8,8 @@ df = pd.read_csv("topics (1).csv")
 for index, row in df.iterrows():
     pdf.add_page()
 
-    pdf.set_font(family="Times", style="B", size=11)
-    pdf.cell(w=0, h=11, txt="Aditya Surve", align="L", ln=1)
+    pdf.set_font(family="Times", style="B", size=24)
+    pdf.set_text_color(111, 8, 201)
+    pdf.cell(w=0, h=11, txt=row["Topic"], align="L", ln=1)
 
 pdf.output("output.pdf")
