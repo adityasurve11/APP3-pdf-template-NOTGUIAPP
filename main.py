@@ -1,7 +1,7 @@
 from fpdf import FPDF
 import pandas as pd
 
-# This is not a WEB app, just a pdf template project
+# This is not a WEB app, just a pdf template project nothing else
 
 pdf = FPDF(orientation= "P", unit="mm", format="A4")
 
