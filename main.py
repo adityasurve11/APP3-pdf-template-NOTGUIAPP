@@ -1,6 +1,8 @@
 from fpdf import FPDF
 import pandas as pd
 
+# This is not a WEB app
+
 pdf = FPDF(orientation= "P", unit="mm", format="A4")
 
 df = pd.read_csv("topics (1).csv")
@@ -30,5 +32,7 @@ for index, row in df.iterrows():
         pdf.cell(w=0, h=11, txt=row["Topic"], align="R")
 
 pdf.output("output.pdf")
+
+
 
 
